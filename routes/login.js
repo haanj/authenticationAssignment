@@ -15,7 +15,7 @@ module.exports = (router) => {
         // splits the authorizatin property
         let authHeader = req.headers.authorization.split(' ');
         // first part of array will be the authorization method
-        let method = authHeader[0];
+        // let method = authHeader[0];
 
         // will be an array of username and password
         let authArray = new Buffer(authHeader[1], 'base64').toString().split(':');
