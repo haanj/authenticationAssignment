@@ -6,8 +6,6 @@ let mongoose = require('mongoose');
 
 mongoose.connect(DB_PORT);
 
-
-
 // creates new router to hold specific routes.. allows for more modularity and cleaner code than assigning everything directly to .express()
 let publicRouter = express.Router();
 
